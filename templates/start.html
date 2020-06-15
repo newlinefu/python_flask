@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='index.css')}}">
+	<title>Document</title>
+</head>
+<body>
+	<form method = "POST" action = "/final">
+		<textarea name="my_text_area" id = "grid" maxlength="90"></textarea>
+		<div class="btn_wrapper">
+			<button name = "send_btn" type = "submit">Отправить</button>
+		</div>
+	</form>
+	<script src = "{{ url_for( 'static', filename='index.js')}}"></script>
+</body>
+</html>
